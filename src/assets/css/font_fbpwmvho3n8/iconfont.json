@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "22879323",
+      "name": "SHOPPING",
+      "font_class": "SHOPPING",
+      "unicode": "ea06",
+      "unicode_decimal": 59910
+    }
+  ]
+}
