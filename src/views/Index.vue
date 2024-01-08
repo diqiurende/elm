@@ -325,7 +325,7 @@ const toBusinessList = () => {
        </div>
      </li>
 
-     <li class="ml-1 mb-4  box-border w-full  border-solid flex p-6 border-b-[1px] border-[#DDDDDDFF]">
+     <li class="ml-1 mb-4  box-border w-full  border-solid flex p-6 border-b-[1px] border-[#DDDDDDFF]" >
        <img class="w-20 h-20 " src="../assets/img/sj05.png" />
        <!--                图片右边大盒子-->
        <div class=" box-border w-full pl-2">
