@@ -47,12 +47,34 @@ onMounted(async () => {
     <div>
 
       <ul>
-        <li v-for="business in businesses" :key="business.businessId">
+        <li v-for="(business, index) in businesses" :key="business.businessId" class="ml-1   w-full flex p-6  border-solid border border-[#DDDDDDFF]"
+            :style="{ marginBottom: index === businesses.length - 1 ? '9vw' : '' }">
           <img :src="business.businessImg" alt="商家图片" style="max-width: 100px; max-height: 100px;">
-          <h3>{{ business.businessName }}</h3>
-          <p>{{ business.businessAddress }}</p>
-          <p>{{ business.businessExplain }}</p>
-          <!-- 其他商家信息的展示 -->
+          <!--                图片右边大盒子-->
+          <div class=" box-border w-full pl-2">
+            <div class="flex justify-between items-center mb-2">
+              <h3 class=" font-semibold text-xl text-[#333333FF]">{{ business.businessName }}</h3>
+
+            </div>
+
+            <div>
+
+            </div>
+            <div class="flex justify-between ">
+              <p>&#165;15起送 | &#165;3配送</p>
+
+            </div>
+            <div class="  flex  ">
+              <div class="box-border border-[1px] border-[#DDDDDDFF] text-[#555555FF] "> {{ business.businessExplain }}</div>
+            </div>
+
+
+            <div class="flex items-center  mt-1 mb-4">
+
+
+            </div>
+          </div>
+          <el-divider v-if="index !== businesses.length - 1"></el-divider>
         </li>
       </ul>
     </div>
