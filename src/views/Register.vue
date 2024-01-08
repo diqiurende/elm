@@ -37,11 +37,9 @@ const checkUserId = async () => {
 
   try {
     // 拼接请求URL
-    const response = await axios.post(`UserController/saveUser?userId=${user.userId}&password=${user.password}`);
 
 
-
-
+    const response = await axios.post(`http://localhost:8080/elm/UserController/saveUser`,user);
 
     // 获取返回的用户信息
     const userInfo = response.data;
